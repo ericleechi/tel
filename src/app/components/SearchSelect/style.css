@@ -1,0 +1,108 @@
+.search-select-wrapper{
+    min-width: 300px;
+
+}
+.search-select{
+    position: relative;
+    height: 50px;
+}
+.search-label{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: 300;
+}
+.search-input{
+    border: none;
+    background: rgba(0, 0, 0, 0.003);
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
+
+    position: relative;
+    margin: 0;
+    width: 100%;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: 1.4em;
+    border: 0;
+    outline: none;
+    color: inherit;
+    padding: 6px;
+    border: 1px solid #999;
+    box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    
+
+}
+.list{
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    background: #ffffff;
+    width: 100%;
+    z-index: 999;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1)
+}
+.list-item{
+    
+    padding: 5px;
+    cursor: pointer;
+    user-select: auto;
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
+   
+}
+.list-item-selected{
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    height: 35px;
+    padding: 5px;
+}
+.list-item-selected .list-item-remove{
+   
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+.list-item.selected-item{
+    background: #eeeeee;
+    
+
+
+}
+
+.list-item-title{
+    font-weight: 600;
+}
+.list-item-content{
+    padding-right: 30px;
+}
+.list-item-description{
+    font-size: 12px;
+}
+.search-select input::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+.search-select input::-moz-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+.search-select input::input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
